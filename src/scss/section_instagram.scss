@@ -24,4 +24,12 @@
     }
 }
 
+@media (max-width: 321px) {
+    .instagram{
+        &-link {
+            display: none;
+        }
+    }
+    
+}
 

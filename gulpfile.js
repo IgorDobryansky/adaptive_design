@@ -40,9 +40,11 @@ const mainTasks = gulp.series(
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(reset, mainTasks);
 const deployZip = gulp.series(reset, mainTasks, zip);
+const cleanBuild = gulp.series(reset);
 
 export { dev };
 export { build };
 export { deployZip };
+export { cleanBuild };
 
 gulp.task("default", dev);

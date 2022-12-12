@@ -25,3 +25,19 @@ for (let i = 1; i < 5; i++) {
 
   postsGrid.append(gridItem);
 }
+
+const navButton = document.querySelector(".dropdown-menu");
+const navList = document.querySelector(".list");
+
+navButton.addEventListener("click", () => {
+  if (getComputedStyle(navList).opacity === "0") {
+    navList.style.opacity = 1;
+    navButton.classList.add("open");
+  } else if (getComputedStyle(navList).opacity === "1") {
+    navList.style.opacity = 0;
+    navButton.classList.remove("open");
+  }
+});
+
+const lines = document.querySelectorAll(".dropdown-menu-item");
+const linesArray = [...lines];

@@ -17,7 +17,7 @@
     @include flex(column, flex-start, center)
 }
 
-@media (width: 769px) {
+@media (max-width: 769px) {
     .container {
         max-width: $tablet-width;
         padding-top: 23px;
