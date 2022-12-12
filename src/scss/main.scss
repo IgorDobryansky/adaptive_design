@@ -1,0 +1,12 @@
+.main {
+    width: 100%;
+    max-width: $pc-width;
+    padding: 34px 15px 0;
+}
+
+@media (width: 769px) {
+    .main {
+        width: 100%;
+        padding: 28px 0 0 0;
+    }
+}

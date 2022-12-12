@@ -1,0 +1,27 @@
+.instagram {
+    position: relative;
+    padding: 47px 0 49px 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    @include font-family-700;
+    text-transform: uppercase;
+    font-size: $xl-font-size;
+    &-link {
+        position: absolute;
+        right: 0;
+        top: 47px;
+    }
+    &-photo {
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        margin-top: 24px;
+        @include flex(row, space-between, flex-start);
+        gap: 10px;
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+      }
+    }
+}
+
+

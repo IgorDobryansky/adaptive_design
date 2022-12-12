@@ -1,33 +1,25 @@
+@import "reset";
+@import "mixin";
 @import "fonts";
+@import "variables";
+@import "header";
+@import "main";
+@import "section_poster";
+@import "section_posts";
+@import "section_instagram";
+@import "footer";
 
-body{
-    background-color: black;
-    span {
-        color: red;
-    }
-    .active {
-        color: white;
-        &-ololo {
-            color: yellow;
-            background: url("@img/gallery_image4.jpg") 0 0 no-repeat;
-            &-qwe {
-                font-size: 50px;
-            }
-        }
-    }
-}
-.privet{
-    color: white;
-}
-@media (max-width: 768px) {
-    span{
-        font-size: 20px;
-    }
-    
+.container {
+    margin: 0 auto;
+    padding-top: 29px;
+    width: 100%;
+    max-width: $pc-width;
+    @include flex(column, flex-start, center)
 }
 
-@media (max-width: 768px) {
- body {
-    background-color: white;
- }   
+@media (width: 769px) {
+    .container {
+        max-width: $tablet-width;
+        padding-top: 23px;
+    }
 }

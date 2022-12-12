@@ -1,0 +1,31 @@
+.header {
+  padding: 22px 0;
+  width: 100%;
+  color: $basic-color;
+  font-size: $s-font-size;
+  @include font-family-400;
+  @include flex(row, center, center);
+  .nav {
+    padding: 0 14%;
+    width: 100%;
+    @include flex(row, center, center);
+    .list {
+      width: 100%;
+      text-transform: uppercase;
+      @include flex(row, space-between, center);
+      &-item {
+        transition: 100ms ease-in-out;
+      }
+      &-item:hover {
+        color: $secondary-color-hover;
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .nav {
+    padding: 0 10%;
+  }
+  
+}

@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include("html/head.html", { "title": "Главная" })
+  @@include("html/head.html", { "title": "HW2 - Gulp-scss" })
   <body>
-    @@include("html/header.html", {})
-    <main>
-      <span>ololo</span>
-      <div class="privet">хасан пый</div>
-      <div class="active">
-        <img src="@img/123.svg" alt="">
-        ololo
-        <div class="active-ololo">
-          fefefe
-          <div class="active-ololo-qwe">ilona</div>
-        </div>
-      </div>
-    </main>
-    @@include("html/footer.html", {})
+    <div class="container">
+      @@include("html/header.html", {})
+      <main class="main">
+        @@include("html/poster.html", {}) @@include("html/section_posts.html",
+        {}) @@include("html/section_instagram.html", {})
+      </main>
+      @@include("html/footer.html", {})
+    </div>
     <script src="js/app.min.js"></script>
   </body>
 </html>

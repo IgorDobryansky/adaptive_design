@@ -19,6 +19,7 @@ export const js = () => {
         },
       })
     )
+    .pipe(app.plugins.replace(/@img\//g, "img/"))
     .pipe(app.gulp.dest(app.path.build.js))
     .pipe(app.plugins.browsersync.stream());
 };
