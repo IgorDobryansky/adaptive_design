@@ -5,6 +5,8 @@
   @include font-family-400;
   @include flex(column, flex-start, center);
   &-title {
+    text-align: center;
+    width: 100%;
     text-transform: uppercase;
     color: $secondary-color-second;
     font-weight: 700;

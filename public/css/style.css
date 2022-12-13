@@ -328,6 +328,8 @@ h6 {
 }
 
 .footer-title {
+  text-align: center;
+  width: 100%;
   text-transform: uppercase;
   color: #fefefe;
   font-weight: 700;
