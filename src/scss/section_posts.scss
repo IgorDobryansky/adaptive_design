@@ -1,45 +1,73 @@
 .posts {
-    margin-top: 69px;
-    padding-bottom: 69px;
+  margin-top: 69px;
+  padding-bottom: 60px;
+  &-title {
+    text-transform: uppercase;
+    color: $basic-color;
+    font-size: $xl-font-size;
+    @include font-family-700;
+  }
+  &-grid {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+    column-gap: 55px;
+    .grid-item {
+      @include flex(row, flex-start, flex-start);
+      &-info {
+        margin-left: 21px;
+        @include font-family-400;
+      }
+      &__title {
+        font-weight: 700;
+        font-size: $xl-font-size;
+      }
+      &__info {
+        font-size: $s-font-size;
+        display: block;
+        margin-top: 11px;
+      }
+      &__text {
+        font-size: $l-font-size;
+        margin-top: 17px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .posts-grid {
+    .grid-item {
+      flex-direction: column;
+      &-info {
+        margin-left: 0;
+        margin-top: 19px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .posts {
+    margin-top: 42px;
+    padding-bottom: 43px;
     &-title {
-        text-transform: uppercase;
-        color: $basic-color;
-        @include font-family-700
+      font-size: $l-font-size;
     }
-    &-grid {
-        margin-top: 24px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 32px;
-        column-gap: 55px;
-        .grid-item {
-            @include flex(row, space-between, flex-start);
-            &-info {
-                margin-left: 21px;
-                @include font-family-400;
-            }
-            &__title {
-                font-weight: 700;
-                font-size: $xl-font-size;
-            }
-            &__info {
-                font-size: $s-font-size;
-                display: block;
-                margin-top: 11px;
-            }
-            &__text {
-                font-size: $l-font-size;
-                margin-top: 17px;
-            }
-        }
+  }
+  .posts-grid {
+    grid-template-columns: repeat(1, 1fr);
+    .grid-item {
+      &__title {
+        font-size: $l-font-size;
+      }
+      &__info {
+        font-size: $m-font-size;
+      }
+      &__text {
+        display: none;
+      }
     }
+  }
 }
-
-@media (max-width: 769px) {
-    .posts-grid {
-        grid-template-columns: repeat(1, 1fr);
-        width: 70%;
-    }    
-}
-
-

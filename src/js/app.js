@@ -26,18 +26,17 @@ for (let i = 1; i < 5; i++) {
   postsGrid.append(gridItem);
 }
 
-const navButton = document.querySelector(".dropdown-menu");
 const navList = document.querySelector(".list");
+const navButton = document.querySelector(".dropdown-menu");
+const navButtonLines = document.querySelectorAll(".dropdown-menu-item");
+const navButtonLinesArray = [...navButtonLines];
 
 navButton.addEventListener("click", () => {
-  if (getComputedStyle(navList).opacity === "0") {
-    navList.style.opacity = 1;
-    navButton.classList.add("open");
-  } else if (getComputedStyle(navList).opacity === "1") {
-    navList.style.opacity = 0;
-    navButton.classList.remove("open");
-  }
+  navButtonLinesArray.forEach((element) => {
+    element.classList.toggle("prepare-rotate");
+  });
+  navList.classList.toggle("open");
+  navButtonLinesArray[0].classList.toggle("remove");
+  navButtonLinesArray[1].classList.toggle("rotate-left");
+  navButtonLinesArray[2].classList.toggle("rotate-right");
 });
-
-const lines = document.querySelectorAll(".dropdown-menu-item");
-const linesArray = [...lines];

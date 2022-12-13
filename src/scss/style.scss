@@ -1,7 +1,7 @@
 @import "reset";
 @import "mixin";
-@import "fonts";
 @import "variables";
+@import "fonts";
 @import "header";
 @import "main";
 @import "section_poster";
@@ -10,16 +10,8 @@
 @import "footer";
 
 .container {
-    margin: 0 auto;
-    padding-top: 29px;
-    width: 100%;
-    max-width: $pc-width;
-    @include flex(column, flex-start, center)
-}
-
-@media (max-width: 769px) {
-    .container {
-        max-width: $tablet-width;
-        padding-top: 23px;
-    }
+  margin: 0 auto;
+  padding: 29px 0 0 0;
+  max-width: 100%;
+  @include flex(column, flex-start, center);
 }

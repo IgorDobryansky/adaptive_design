@@ -1,12 +1,18 @@
 .main {
-    width: 100%;
-    max-width: $pc-width;
-    padding: 34px 15px 0;
+  width: 100%;
+  padding: 34px 14% 0;
 }
 
-@media (max-width: 769px) {
-    .main {
-        width: 100%;
-        padding: 28px 0 0 0;
-    }
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+    padding: 28px 10% 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .main {
+    width: 100%;
+    padding: 23px 7% 0;
+  }
 }
