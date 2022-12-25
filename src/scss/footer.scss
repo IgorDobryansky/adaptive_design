@@ -1,31 +1,27 @@
 .footer {
-  padding: 66px 0 70px 0;
   width: 100%;
-  background-color: $footer-background-color;
-  @include font-family-400;
+  background-color: #000000;
+  padding: 66px 0 70px;
   @include flex(column, flex-start, center);
-  &-title {
-    text-align: center;
-    width: 100%;
-    text-transform: uppercase;
-    color: $secondary-color-second;
-    font-weight: 700;
+  .title--white {
+    color: $footer-title-color;
   }
-  &-text {
-    color: $secondary-color-first;
-    max-width: 57%;
-    text-align: center;
+  &__text {
     line-height: 28px;
+    color: $footer-text-color;
+    font-weight: 400;
+    max-width: 684px;
+    text-align: center;
     margin-top: 22px;
   }
-  .social-media {
-    @include flex(row, space-between, center);
+  .social {
     margin-top: 37px;
-    width: 200px;
+    @include flex(row, space-between, center);
+    width: 192px;
     .image-wrapper {
+      border-radius: 50%;
       width: 34px;
       height: 34px;
-      border-radius: 50%;
       @include flex(row, center, center);
       &:nth-child(1) {
         border: 2px solid #f8902e;
@@ -45,39 +41,10 @@
     }
   }
   .contacts {
-    color: $secondary-color-first;
-    margin-top: 34px;
-    max-width: 51%;
-    text-align: center;
     line-height: 26px;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer {
-    padding: 56px 0;
-    &-text {
-      max-width: 72%;
-    }
-    .contacts {
-      max-width: 51%;
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .footer {
-    padding: 38px 0 47px 0;
-    &-title {
-      font-size: $l-font-size;
-    }
-    &-text {
-      font-size: $s-font-size;
-      max-width: 81%;
-    }
-    .contacts {
-      font-size: $l-font-size;
-      max-width: 63%;
-    }
+    font-size: $xl-font-size;
+    color: $footer-text-color;
+    margin-top: 34px;
+    font-weight: 400;
   }
 }

@@ -1,73 +1,43 @@
 .posts {
-  margin-top: 69px;
-  padding-bottom: 60px;
-  &-title {
-    text-transform: uppercase;
-    color: $basic-color;
-    font-size: $xl-font-size;
-    @include font-family-700;
-  }
-  &-grid {
+  padding: 69px 0;
+  width: 100%;
+  max-width: 1170px;
+  .grid {
     margin-top: 24px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 32px;
     column-gap: 55px;
-    .grid-item {
-      @include flex(row, flex-start, flex-start);
-      &-info {
-        margin-left: 21px;
-        @include font-family-400;
-      }
-      &__title {
-        font-weight: 700;
-        font-size: $xl-font-size;
-      }
-      &__info {
-        font-size: $s-font-size;
-        display: block;
-        margin-top: 11px;
-      }
-      &__text {
-        font-size: $l-font-size;
-        margin-top: 17px;
-      }
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .posts-grid {
-    .grid-item {
-      flex-direction: column;
-      &-info {
-        margin-left: 0;
-        margin-top: 19px;
+    row-gap: 32px;
+    &__item {
+      @include flex(row, space-between, flex-start);
+      gap: 21px;
+      .description {
+        &__title {
+          line-height: 30px;
+          text-transform: none;
+        }
+        &__link {
+          line-height: 20px;
+          font-size: $m-font-size;
+          font-weight: 400;
+          margin-top: 1px;
+        }
+        &__text {
+          font-size: $l-font-size;
+          color: $text-color;
+          line-height: 26px;
+          font-weight: 400;
+          margin-top: 13px;
+        }
       }
     }
   }
 }
 
-@media (max-width: 500px) {
-  .posts {
-    margin-top: 42px;
-    padding-bottom: 43px;
-    &-title {
-      font-size: $l-font-size;
-    }
-  }
-  .posts-grid {
-    grid-template-columns: repeat(1, 1fr);
-    .grid-item {
-      &__title {
-        font-size: $l-font-size;
-      }
-      &__info {
-        font-size: $m-font-size;
-      }
-      &__text {
-        display: none;
-      }
-    }
-  }
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $main-text-color;
+  font-size: $xl-font-size;
+  line-height: 22px;
 }

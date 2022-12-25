@@ -1,5 +1,5 @@
-export function createElement(name, className) {
-  const newElement = document.createElement(name);
-  newElement.className = className;
-  return newElement;
+export function createElement(tagName, className) {
+  const element = document.createElement(tagName);
+  element.className = className;
+  return element;
 }

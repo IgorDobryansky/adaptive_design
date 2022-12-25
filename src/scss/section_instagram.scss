@@ -1,38 +1,23 @@
 .instagram {
-  position: relative;
-  padding: 47px 0 49px 0;
-  @include font-family-700;
+  padding: 47px 0 49px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.03);
+  @include flex(column, flex-start, center);
   text-transform: uppercase;
-  font-size: $xl-font-size;
+  font-weight: 700;
+  &__title {
+    width: 100%;
+    max-width: 1170px;
+    @include flex(row, space-between, center);
+    color: $main-text-color;
+  }
   &-link {
-    position: absolute;
-    right: 0;
-    top: 47px;
+    font-size: $m-font-size;
   }
-  &-photo {
-    overflow-x: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  &__images {
     margin-top: 24px;
+    width: 100%;
+    max-width: 1170px;
     @include flex(row, space-between, flex-start);
-    gap: 10px;
-    &::-webkit-scrollbar {
-      width: 0;
-      height: 0;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .instagram {
-    &-link {
-      display: none;
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .instagram {
-    font-size: $l-font-size;
   }
 }

@@ -1,6 +1,10 @@
 .poster {
-    width: 100%;
-    &-image {
-        width: 100%;
+  width: 100%;
+  max-width: 1170px;
+  padding-top: 34px;
+  &-wrapper {
+    img {
+      width: 100%;
     }
+  }
 }

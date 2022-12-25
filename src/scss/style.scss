@@ -1,17 +1,20 @@
 @import "reset";
+@import "fonts";
 @import "mixin";
 @import "variables";
-@import "fonts";
 @import "header";
-@import "main";
 @import "section_poster";
 @import "section_posts";
 @import "section_instagram";
 @import "footer";
 
 .container {
-  margin: 0 auto;
-  padding: 29px 0 0 0;
-  max-width: 100%;
+  width: 100%;
+  padding-top: 29px;
+  @include font-family(700);
   @include flex(column, flex-start, center);
+  .main {
+    width: 100%;
+    @include flex(column, flex-start, center)
+  }
 }

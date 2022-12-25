@@ -3,67 +3,149 @@
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script defer src="js/app.min.js?_v=20221217165944"></script>
+  <script defer src="js/app.min.js"></script>
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20221217165944" />
+  <link rel="stylesheet" href="css/style.min.css" />
   <title>HW2 - Gulp-scss</title>
 </head>
 
   <body>
     <div class="container">
       <header class="header">
-  <div class="dropdown-menu">
-    <div class="wrapper">
-      <div class="dropdown-menu-item"></div>
-      <div class="dropdown-menu-item"></div>
-      <div class="dropdown-menu-item"></div>
-    </div>
-  </div>
   <nav class="nav">
     <ul class="list">
-      <li class="list-item"><a href="#" class="list-link">Home</a></li>
-      <li class="list-item"><a href="#" class="list-link">About Us</a></li>
-      <li class="list-item"><a href="#" class="list-link">Our Journal</a></li>
-      <li class="list-item"><a href="#" class="list-link">Projects</a></li>
-      <li class="list-item"><a href="#" class="list-link">news</a></li>
-      <li class="list-item"><a href="#" class="list-link">features</a></li>
-      <li class="list-item"><a href="#" class="list-link">contact</a></li>
+      <li class="list__item"><a href="#!" class="link">Home</a></li>
+      <li class="list__item"><a href="#!" class="link">About Us</a></li>
+      <li class="list__item"><a href="#!" class="link">Our Journal</a></li>
+      <li class="list__item"><a href="#!" class="link">Projects</a></li>
+      <li class="list__item"><a href="#!" class="link">news</a></li>
+      <li class="list__item"><a href="#!" class="link">features</a></li>
+      <li class="list__item"><a href="#!" class="link">contact</a></li>
     </ul>
   </nav>
+  <div class="menu">
+    <div class="menu__line"></div>
+    <div class="menu__line"></div>
+    <div class="menu__line"></div>
+  </div>
 </header>
 
       <main class="main">
         <section class="poster">
-  <img class="poster-image" src="img/main_background.jpg" alt="Main poster" />
+  <div class="poster-wrapper">
+    <img src="img/main_background.jpg" alt="Main poster" />
+  </div>
 </section>
- <section class="posts">
-  <p class="posts-title">- our Recent posts</p>
-  <div class="posts-grid"></div>
+        <section class="posts">
+  <h2 class="title">- our Recent posts</h2>
+  <div class="grid">
+    <div class="grid__item">
+      <div class="image-wrapper">
+        <img src="img/post_image/post-image1.jpg" alt="Post image" />
+      </div>
+
+      <div class="description">
+        <h3 class="description__title title">Aenean Adipiscing Etiam Vestibulum</h3>
+
+        <a href="#!" class="description__link"
+          >Photography, Journal / 9 Comments</a
+        >
+
+        <p class="description__text">
+          Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque
+          ornare sem lacinia quam venenatis vestibulum.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="image-wrapper">
+        <img src="img/post_image/post-image2.jpg" alt="Post image" />
+      </div>
+
+      <div class="description">
+        <h3 class="description__title title">Aenean Adipiscing Etiam Vestibulum</h3>
+
+        <a href="#!" class="description__link"
+          >Photography, Journal / 9 Comments</a
+        >
+
+        <p class="description__text">
+          Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque
+          ornare sem lacinia quam venenatis vestibulum.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="image-wrapper">
+        <img src="img/post_image/post-image3.jpg" alt="Post image" />
+      </div>
+
+      <div class="description">
+        <h3 class="description__title title">Aenean Adipiscing Etiam Vestibulum</h3>
+
+        <a href="#!" class="description__link"
+          >Photography, Journal / 9 Comments</a
+        >
+
+        <p class="description__text">
+          Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque
+          ornare sem lacinia quam venenatis vestibulum.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="image-wrapper">
+        <img src="img/post_image/post-image4.jpg" alt="Post image" />
+      </div>
+
+      <div class="description">
+        <h3 class="description__title title">Aenean Adipiscing Etiam Vestibulum</h3>
+
+        <a href="#!" class="description__link"
+          >Photography, Journal / 9 Comments</a
+        >
+
+        <p class="description__text">
+          Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque
+          ornare sem lacinia quam venenatis vestibulum.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
- <section class="instagram">
-  <p class="instagram-title">- Latest Instagram Shots</p>
-  <a href="https://instagram.com" target="_blank" class="instagram-link"
-    >go to our instagram page -</a
-  >
-  <div class="instagram-photo">
+
+        <section class="instagram">
+  <div class="instagram__title">
+    <h2 class="title">- Latest Instagram Shots</h2>
+    <a href="https://www.instagram.com/" target="_blank" class="instagram-link"
+      >go to our instagram page -</a
+    >
+  </div>
+  <div class="instagram__images">
     <div class="image-wrapper">
       <img
         src="img/instagram_image/instagram-image1.jpg"
         alt="Instagram image"
       />
     </div>
+
     <div class="image-wrapper">
       <img
         src="img/instagram_image/instagram-image2.jpg"
         alt="Instagram image"
       />
     </div>
+
     <div class="image-wrapper">
       <img
         src="img/instagram_image/instagram-image3.jpg"
         alt="Instagram image"
       />
     </div>
+
     <div class="image-wrapper">
       <img
         src="img/instagram_image/instagram-image4.jpg"
@@ -72,16 +154,17 @@
     </div>
   </div>
 </section>
-
       </main>
       <footer class="footer">
-  <p class="footer-title">- get in touch with us -</p>
-  <p class="footer-text">
+  <h2 class="title title--white">- our Recent posts</h2>
+
+  <p class="footer__text">
     Maecenas faucibus molli interdum. Cras mattis consectetur purus sitor amet
     sed donec malesuada ullamcorper odio. Curabitur blandit tempus porttitor
     vollisky inceptos mollisestor.
   </p>
-  <div class="social-media">
+
+  <div class="social">
     <a
       href="https://ru.wikipedia.org/wiki/RSS"
       target="_blank"
@@ -89,22 +172,28 @@
     >
       <img src="img/social_icon/rss-icon.png" alt="" />
     </a>
+
     <a href="https://www.facebook.com/" target="_blank" class="image-wrapper">
       <img src="img/social_icon/facebook-icon.png" alt="" />
     </a>
+
     <a href="https://twitter.com/" target="_blank" class="image-wrapper">
       <img src="img/social_icon/twitter-icon.png" alt="" />
     </a>
+
     <a href="https://dribbble.com/" target="_blank" class="image-wrapper">
       <img src="img/social_icon/dribbble-icon.png" alt="" />
     </a>
+
     <a href="https://www.pinterest.com/" target="_blank" class="image-wrapper">
       <img src="img/social_icon/pinterest-icon.png" alt="" />
     </a>
   </div>
+
   <p class="contacts">
-    Moonshine St. 14-05 Light City / T. +00 (123) 456 78 90 /
-    first.last@email.com
+    Moonshine St. 14-05 Light City /
+    <a href="tel:+001234567890" class="phone-number">T. +00 (123) 456 78 90</a> /
+    <a href="mailto:first.last@email.com" class="email">first.last@email.com</a>
   </p>
 </footer>
 
