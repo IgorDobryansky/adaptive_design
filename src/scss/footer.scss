@@ -5,6 +5,8 @@
   @include flex(column, flex-start, center);
   .title--white {
     color: $footer-title-color;
+    width: 100%;
+    text-align: center;
   }
   &__text {
     line-height: 28px;
