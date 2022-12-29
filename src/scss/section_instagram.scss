@@ -19,5 +19,46 @@
     width: 100%;
     max-width: 1170px;
     @include flex(row, space-between, flex-start);
+    gap: 10px;
+    .image-wrapper {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .instagram {
+    padding: 47px 92px 50px 80px;
+    &__images {
+      margin-top: 35px;
+      .image-wrapper {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .instagram {
+    padding: 38px 47px 42px 25px;
+    .title {
+      font-size: $l-font-size;
+    }
+    &-link {
+      display: none;
+    }
+    &__images {
+      margin-top: 13px;
+      justify-content: center;
+      .image-wrapper {
+        &:not(:first-child) {
+          display: none;
+        }
+      }
+    }
   }
 }

@@ -8,3 +8,15 @@
     }
   }
 }
+
+@media (max-width: 1199px) {
+  .poster {
+    padding: 28px 92px 0 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .poster {
+    padding: 23px 28px 0 25px;
+  }
+}
