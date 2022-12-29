@@ -167,10 +167,6 @@ h6 {
   color: #57a4a4;
 }
 
-.nav_show {
-  display: block;
-}
-
 .position-center {
   transition: 100ms ease-in-out;
   top: 50%;
@@ -475,6 +471,10 @@ h6 {
 
   .nav .list__item:hover {
     background-color: #e5e5e5;
+  }
+
+  .nav_show {
+    display: block;
   }
 
   .poster {
